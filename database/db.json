@@ -1,3 +1,114 @@
-{ "users": [
-    {"id":1, "user_uuid":"3b927e7f-f0b1-4370-80f7-3e24b6733411", "username":"I "}
-], "threads": [] }
+{
+  "users": [
+    {
+      "id": 1,
+      "user_uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "username": "I am a Test ",
+      "handle": "@test",
+      "bio": "lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "img": "https://images.unsplash.com/photo-1684620862250-287cb4543b46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "instagram_url": "https://www.instagram.com/test",
+      "followers": [
+        {
+          "user_uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a"
+        },
+        {
+          "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "user_uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a",
+      "username": "Still a Test ",
+      "handle": "@test2",
+      "bio": "lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "img": "https://images.unsplash.com/photo-1689327021554-7e15adbc23ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      "instagram_url": "https://www.instagram.com/test2",
+      "followers": [
+        {
+          "user_uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
+        },
+        {
+          "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad",
+      "username": "Test Number 3 ",
+      "handle": "@test3",
+      "bio": "lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "img": "https://images.unsplash.com/photo-1690051421762-7a9a934199ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "instagram_url": "https://www.instagram.com/test3",
+      "followers": [
+        {
+          "user_uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
+        },
+        {
+          "user_uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "id": 1,
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "Mon Jul 24 2023 09:06:55 GMT+0300 (Eastern European Summer Time)",
+      "thread_to": null,
+      "reply_to": null,
+      "content": "Hi, I'm a test message",
+      "likes": [
+        {
+          "uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a"
+        },
+        {
+          "uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "thread_from": "7e254e6b-75b2-4cda-a817-874479a00e0a",
+      "time_stamp": "Mon Jul 23 2023 09:06:55 GMT+0300 (Eastern European Summer Time)",
+      "thread_to": null,
+      "reply_to": null,
+      "content": "Hi, I'm a test message but number 2",
+      "likes": [
+        {
+          "uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
+        },
+        {
+          "uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "thread_from": "1aa828c6-f389-447d-b5d3-2303de183bad",
+      "time_stamp": "Mon Jul 23 2023 19:06:55 GMT+0300 (Eastern European Summer Time)",
+      "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "reply_to": null,
+      "content": "Hi, I'm a test comment ",
+      "likes": []
+    },
+    {
+      "id": 4,
+      "thread_from": "7e254e6b-75b2-4cda-a817-874479a00e0a",
+      "time_stamp": "Mon Jul 23 2023 19:07:55 GMT+0300 (Eastern European Summer Time)",
+      "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "reply_to": 3,
+      "content": "Hi, I'm a test reply to a comment ",
+      "likes": [
+        {
+          "uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
+        },
+        {
+          "uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        }
+      ]
+    }
+  ]
+}
