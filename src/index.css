@@ -1,1 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.app {
+  position: relative;
+  height: 750px;
+  width: 380px;
+  border-radius: 40px;
+  background-color: rgb(38, 38, 38);
+  padding: 20px;
+}
+
+svg {
+  fill: whitesmoke;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+h1,
+h2,
+p {
+  margin: 4px;
+}
+h1 {
+  font-size: 24 px;
+}
+.sub-text {
+  color: rgb(115, 115, 115);
+}
+a {
+  text-decoration: none;
+  color: rgb(115, 115, 115);
+}
+header .info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .avatar-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+header .avatar-container img {
+  height: 110%;
+}
+header .threads-info {
+  background-color: rgb(60, 60, 60);
+  color: rgb(115, 115, 115);
+  font-size: 13px;
+  padding: 3px 6px;
+  border-radius: 20px;
+}
+button.primary {
+  border: rgb(115, 115, 115) solid 1px;
+  background-color: transparent;
+  padding: 7px;
+  margin: 15px 0px;
+  border-radius: 7px;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 100%;
+}
+
+.btn-container button {
+  border: none;
+  background-color: transparent;
+  padding: 7px;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 50%;
+  border-bottom: solid 1px rgb(115, 115, 115);
+}
+
+.btn-container button.selected {
+  border-bottom: solid 2px whitesmoke;
+}
+
+.feed-card .icons-container svg {
+  height: 20px;
+  padding: 0 5px;
+}
+
+.feed-card {
+  border-bottom: solid 1px rgb(115, 115, 115);
+  padding: 10px 0px;
+}
+.feed-card .text-container {
+  display: flex;
+  justify-content: space-between;
+}
+.feed-card .avatar-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.feed-card .avatar-container img {
+  height: 110%;
+}
+
+.feed-container {
+  height: 400px;
+  overflow-y: auto;
+}
+input {
+  background-color: transparent;
+  border: solid 1px rgb(115, 115, 115);
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+input:focus {
+  outline: none;
+}
+.popup-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 650px;
+  width: 380px;
+  border-radius: 40px;
+  background-color: rgb(38, 38, 38);
+  padding: 20px;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.9) 0 -3px 5px;
+}

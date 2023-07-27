@@ -1,16 +1,14 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
+import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 import Feed from "./components/Feed";
 import PopUp from "./components/PopUp";
-
 const App = () => {
   return (
-    <div className="relative h-[750px] w-[380px] rounded-3xl p-5 bg-gray-600">
-      <Navbar />
+    <div className="app">
+      <Navigation />
       <Header />
       <Feed />
-      <PopUp />
+      {/* <PopUp /> */}
     </div>
   );
 };
