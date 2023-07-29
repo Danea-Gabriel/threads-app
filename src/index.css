@@ -56,6 +56,7 @@ header .avatar-container {
 }
 header .avatar-container img {
   height: 110%;
+  width: 100%;
 }
 header .threads-info {
   background-color: rgb(60, 60, 60);
@@ -110,11 +111,11 @@ button.primary {
 }
 .feed-card .avatar-container img {
   height: 110%;
+  width: 100%;
 }
-
 .feed-container {
-  height: 400px;
-  overflow-y: auto;
+  height: 350px;
+  overflow-y: scroll;
 }
 input {
   background-color: transparent;
@@ -142,4 +143,14 @@ input:focus {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.9) 0 -3px 5px;
+}
+
+.write-icon {
+  fill: white;
+  margin: 20px;
+  height: 40px;
+  margin-left: 170px;
+}
+.close-pop-up-button {
+  cursor: pointer;
 }

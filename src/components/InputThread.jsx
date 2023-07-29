@@ -1,9 +1,11 @@
-const InputThread = () => {
+const InputThread = ({ user, text, setText, postThread }) => {
   return (
     <div>
-      <p></p>
-      <input type="text" />
-      <button className="primary">Post</button>
+      <p>{user.handle}</p>
+      <input value={text} onChange={e => setText(e.target.value)} />
+      <button className="primary" onClick={postThread}>
+        Post
+      </button>
     </div>
   );
 };

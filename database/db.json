@@ -6,7 +6,7 @@
       "username": "I am a Test ",
       "handle": "@test",
       "bio": "lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "img": "https://images.unsplash.com/photo-1684620862250-287cb4543b46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "img": "https://plus.unsplash.com/premium_photo-1690164161383-f5ff30a790bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=685&q=80",
       "instagram_url": "https://www.instagram.com/test",
       "followers": [
         {
@@ -62,10 +62,13 @@
       "content": "Hi, I'm a test message",
       "likes": [
         {
-          "uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a"
+          "user_uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a"
         },
         {
-          "uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+          "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        },
+        {
+          "user_uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
         }
       ]
     },
@@ -78,10 +81,10 @@
       "content": "Hi, I'm a test message but number 2",
       "likes": [
         {
-          "uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
+          "user_uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
         },
         {
-          "uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+          "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
         }
       ]
     },
@@ -90,8 +93,17 @@
       "thread_from": "1aa828c6-f389-447d-b5d3-2303de183bad",
       "time_stamp": "Mon Jul 23 2023 19:06:55 GMT+0300 (Eastern European Summer Time)",
       "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
-      "reply_to": null,
+      "reply_to": 1,
       "content": "Hi, I'm a test comment ",
+      "likes": []
+    },
+    {
+      "id": 13,
+      "thread_from": "1aa828c6-f389-447d-b5d3-2303de183bad",
+      "time_stamp": "Mon Jul 23 2023 20:06:55 GMT+0300 (Eastern European Summer Time)",
+      "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "reply_to": 1,
+      "content": "Hi, I'm a test 2 comment ",
       "likes": []
     },
     {
@@ -103,12 +115,164 @@
       "content": "Hi, I'm a test reply to a comment ",
       "likes": [
         {
-          "uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
+          "user_uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
         },
         {
-          "uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+          "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
         }
       ]
+    },
+    {
+      "id": 5,
+      "thread_from": "7e254e6b-75b2-4cda-a817-874479a00e0a",
+      "time_stamp": "Mon Jul 24 2023 09:09:55 GMT+0300 (Eastern European Summer Time)",
+      "thread_to": null,
+      "reply_to": null,
+      "content": "Reply here",
+      "likes": [
+        {
+          "user_uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a"
+        },
+        {
+          "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "Mon Jul 24 2023 09:07:55 GMT+0300 (Eastern European Summer Time)",
+      "thread_to": "7e254e6b-75b2-4cda-a817-874479a00e0a",
+      "reply_to": 5,
+      "content": "Hi, I am trying something here",
+      "likes": [
+        {
+          "user_uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a"
+        },
+        {
+          "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "Mon Jul 25 2023 09:06:55 GMT+0300 (Eastern European Summer Time)",
+      "thread_to": null,
+      "reply_to": null,
+      "content": "Hi, again, ",
+      "likes": [
+        {
+          "user_uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a"
+        },
+        {
+          "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        },
+        {
+          "user_uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "Mon Jul 25 2023 09:23:55 GMT+0300 (Eastern European Summer Time)",
+      "thread_to": null,
+      "reply_to": null,
+      "content": "Hi, all good?",
+      "likes": [
+        {
+          "user_uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a"
+        },
+        {
+          "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        },
+        {
+          "user_uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "Mon Jul 28 2023 08:06:55 GMT+0300 (Eastern European Summer Time)",
+      "thread_to": null,
+      "reply_to": null,
+      "content": "Let me test the scrool, ",
+      "likes": [
+        {
+          "user_uuid": "7e254e6b-75b2-4cda-a817-874479a00e0a"
+        },
+        {
+          "user_uuid": "1aa828c6-f389-447d-b5d3-2303de183bad"
+        },
+        {
+          "user_uuid": "3b927e7f-f0b1-4370-80f7-3e24b6733411"
+        }
+      ]
+    },
+    {
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "2023-07-29T20:58:40.033Z",
+      "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "reply_to": 1,
+      "content": "Dubios",
+      "likes": [],
+      "id": 14
+    },
+    {
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "2023-07-29T20:58:52.823Z",
+      "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "reply_to": 1,
+      "content": "Yey it works",
+      "likes": [],
+      "id": 15
+    },
+    {
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "2023-07-29T21:10:35.351Z",
+      "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "reply_to": null,
+      "content": "I ma the last post I posted form the post input",
+      "likes": [],
+      "id": 16
+    },
+    {
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "2023-07-29T21:11:00.958Z",
+      "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "reply_to": null,
+      "content": "Test me for likes",
+      "likes": [],
+      "id": 17
+    },
+    {
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "2023-07-29T21:11:06.703Z",
+      "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "reply_to": null,
+      "content": "Test me again for likes",
+      "likes": [],
+      "id": 18
+    },
+    {
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "2023-07-29T21:11:20.840Z",
+      "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "reply_to": null,
+      "content": "Test me for replies",
+      "likes": [],
+      "id": 19
+    },
+    {
+      "thread_from": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "time_stamp": "2023-07-29T21:11:28.079Z",
+      "thread_to": "3b927e7f-f0b1-4370-80f7-3e24b6733411",
+      "reply_to": null,
+      "content": "Test me again for replies",
+      "likes": [],
+      "id": 20
     }
   ]
 }

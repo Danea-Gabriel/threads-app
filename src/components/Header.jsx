@@ -1,22 +1,20 @@
-const Header = () => {
+const Header = ({ user, viewThreads, setViewThreads }) => {
   return (
     <header>
       <div className="info-container">
         <div className="user-info">
-          <h1>username</h1>
+          <h1>{user.username}</h1>
           <p>
-            handle <span className="threads-info">threads.net</span>
+            {user.handle} <span className="threads-info">threads.net</span>
           </p>
         </div>
         <div className="avatar-container">
-          <img src="" alt="avatar picture" />
+          <img src={user.img} alt="avatar picture" />
         </div>
       </div>
-      <p>bio</p>
+      <p>{user.bio}</p>
       <div className="more-info-container">
-        <p className="sub-text">
-          x Followers <a href="">link</a>
-        </p>
+        <p className="sub-text">{user.followers.length} Followers</p>
       </div>
       <button
         className="primary"
@@ -27,8 +25,18 @@ const Header = () => {
         Share Profile
       </button>
       <div className="btn-container">
-        <button> Threads</button>
-        <button> Replies</button>
+        <button
+          className={viewThreads ? "selected" : ""}
+          onClick={() => setViewThreads(true)}
+        >
+          Threads
+        </button>
+        <button
+          className={!viewThreads ? "selected" : ""}
+          onClick={() => setViewThreads(false)}
+        >
+          Replies
+        </button>
       </div>
     </header>
   );
