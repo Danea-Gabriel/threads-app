@@ -1,8 +1,6 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Simple app like the Threads app where I used json-server as a database mock with users and threads.
+My goal was to practice working with api's and practice drilling props.
+The user is hardcoded so you can see only the threads from a particular user I chose and you can reply only to your own threads. The idea was to practice some basics of the React not to make an entire project.
+I will comeback and implement a login part and then take all the available threads from everyone implementing the posibility to reply and like to any threads that is in you feed.
